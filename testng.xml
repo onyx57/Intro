@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="2" preserve-order="true">
+
+    <!-- Listener for ExtentReports -->
+    <listeners>
+        <listener class-name="kene.ListenersNG"/>
+    </listeners>
+
+    <test name="StandAloneTest Execution">
+        <classes>
+            <class name="kene.StandAloneTest">
+                <methods>
+                    <include name="purchaseProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
